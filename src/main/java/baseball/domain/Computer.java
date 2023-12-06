@@ -8,7 +8,7 @@ import camp.nextstep.edu.missionutils.Randoms;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Computer implements BaseballNumbers {
+public class Computer implements Baseball {
     private List<Integer> computerNumbers;
     public Computer() {
         createNumbers();

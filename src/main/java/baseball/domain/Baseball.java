@@ -2,6 +2,6 @@ package baseball.domain;
 
 import java.util.List;
 
-public interface BaseballNumbers {
+public interface Baseball {
     public List<Integer> getNumbers();
 }
