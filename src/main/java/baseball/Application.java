@@ -5,20 +5,30 @@ import baseball.domain.Computer;
 import baseball.domain.Judgement;
 import baseball.domain.Player;
 import baseball.view.InputView;
-import java.util.List;
+import baseball.view.OutputView;
 
 public class Application {
     public static void main(String[] args) {
-        Baseball player = new Player(InputView.getUserNumbers());
+        OutputView.printStart();
+
         Baseball computer = new Computer();
-
         Judgement judgement = new Judgement();
-        System.out.println("player : " + player.getNumbers());
-        System.out.println("computer : " + computer.getNumbers());
-        System.out.println("strike : " + judgement.calculateStrike(player.getNumbers(), computer.getNumbers()));
-        System.out.println("ball : " + judgement.calculateBall(player.getNumbers(), computer.getNumbers()));
 
-        boolean doesRetry = InputView.doesRetry();
-        System.out.println("doesRetry : " + doesRetry);
+        playTurn(computer, judgement);
+    }
+
+    private static void playTurn(Baseball computer, Judgement judgement) {
+        while (true) {
+            Baseball player = new Player(InputView.getUserNumbers());
+
+            int strike = judgement.calculateStrike(player.getNumbers(), computer.getNumbers());
+            int ball = judgement.calculateBall(player.getNumbers(), computer.getNumbers());
+
+            OutputView.printResult(strike, ball);
+
+            if (judgement.isEnd(player.getNumbers(), computer.getNumbers())) {
+                break;
+            }
+        }
     }
 }

@@ -4,11 +4,11 @@ import static baseball.domain.Constants.BASEBALL_NUMBERS_LENGTH;
 
 public class OutputView {
     private static final String NEW_LINE = "\n";
-    public void printStart() {
+    public static void printStart() {
         System.out.println("숫자 야구 게임을 시작합니다.");
     }
 
-    public void printResult(int strike, int ball) {
+    public static void printResult(int strike, int ball) {
         StringBuilder message = new StringBuilder();
         if (ball != 0) {
             message.append(ball).append("볼 ");

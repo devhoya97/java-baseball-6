@@ -34,11 +34,11 @@ while (computer.size() < 3) {
     - [x] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
     - [x] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
 - Application
-  - [ ] 한 턴을 진행한다.
-    - [ ] InputView로 사용자 입력을 받는다.
-    - [ ] 볼, 스트라이크 갯수를 계산한다.
-    - [ ] OutputView에게 볼, 스트라이크 갯수를 넘겨준다.
-    - [ ] isEnd가 true가 될 때까지 반복한다.
+  - [x] 한 턴을 진행한다.
+    - [x] InputView로 사용자 입력을 받는다.
+    - [x] 볼, 스트라이크 갯수를 계산한다.
+    - [x] OutputView에게 볼, 스트라이크 갯수를 넘겨준다.
+    - [x] isEnd가 true가 될 때까지 반복한다.
   - [ ] 여러 턴을 진행한다.
     - [ ] 한 턴을 진행 후, InputView로 사용자에게 재시도 여부를 입력받는다.
     - [ ] doesRetry가 false가 될 때까지 반복한다.
