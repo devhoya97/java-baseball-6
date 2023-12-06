@@ -8,9 +8,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class PlayerNumbers implements BaseballNumbers {
+public class Player implements BaseballNumbers {
     private final List<Integer> playerNumbers;
-    public PlayerNumbers(List<Integer> playerNumbers) {
+    public Player(List<Integer> playerNumbers) {
         validate(playerNumbers);
         this.playerNumbers = playerNumbers;
     }
@@ -46,6 +46,6 @@ public class PlayerNumbers implements BaseballNumbers {
 
     @Override
     public List<Integer> getNumbers() {
-        return null;
+        return playerNumbers;
     }
 }
