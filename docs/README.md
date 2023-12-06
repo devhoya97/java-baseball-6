@@ -4,10 +4,7 @@
   사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
   - [ ] 서로 다른 3자리의 수를 입력한다.
     - [ ] `숫자를 입력해주세요 : `를 출력한다.
-    - [ ] [예외처리] 3자리가 아니면 IllegalArgumentException을 발생시킨다.
     - [ ] [예외처리] 숫자가 아니면 IllegalArgumentException을 발생시킨다.
-    - [ ] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
-    - [ ] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
   - [ ] 게임이 끝난 경우 재시작여부를 입력한다.
     - [ ] `게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.`를 출력한다.
     - [ ] [예외처리] 입력이 1 또는 2가 아니면 IllegalArgumentException을 발생시킨다.
@@ -32,6 +29,10 @@ while (computer.size() < 3) {
   - [x] 컴퓨터 숫자를 생성한다.
     - [x] 1~9까지 서로 다른 임의의 수 3개를 선택한다.
     - [x] 게임이 재시작되면 숫자를 새로 생성한다.
+  - [ ] 플레이어 숫자를 검증한다.
+    - [x] [예외처리] 3자리가 아니면 IllegalArgumentException을 발생시킨다.
+    - [ ] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
+    - [ ] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
 - OutputView
   - [ ] 게임 시작 문구를 출력한다.
     - [ ] `숫자 야구 게임을 시작합니다.` 를 출력한다.
