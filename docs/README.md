@@ -32,7 +32,7 @@ while (computer.size() < 3) {
   - [ ] 플레이어 숫자를 검증한다.
     - [x] [예외처리] 3자리가 아니면 IllegalArgumentException을 발생시킨다.
     - [x] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
-    - [ ] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
+    - [x] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
 - OutputView
   - [ ] 게임 시작 문구를 출력한다.
     - [ ] `숫자 야구 게임을 시작합니다.` 를 출력한다.

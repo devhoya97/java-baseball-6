@@ -4,7 +4,9 @@ import static baseball.domain.Constants.BASEBALL_NUMBERS_LENGTH;
 import static baseball.domain.Constants.MAX_BASEBALL_NUMBER;
 import static baseball.domain.Constants.MIN_BASEBALL_NUMBER;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class PlayerNumbers implements BaseballNumbers {
     private final List<Integer> playerNumbers;
@@ -34,7 +36,11 @@ public class PlayerNumbers implements BaseballNumbers {
     }
 
     private void validateDuplication(List<Integer> playerNumbers) {
+        Set<Integer> uniqueNumbers = new HashSet<>(playerNumbers);
 
+        if (uniqueNumbers.size() != playerNumbers.size()) {
+            throw new IllegalArgumentException();
+        }
     }
 
 
