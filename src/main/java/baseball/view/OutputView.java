@@ -26,4 +26,8 @@ public class OutputView {
 
         System.out.println(message);
     }
+
+    public static void printEnd() {
+        System.out.println("숫자 야구 게임을 종료합니다.");
+    }
 }

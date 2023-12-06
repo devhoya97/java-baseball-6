@@ -11,10 +11,14 @@ public class Application {
     public static void main(String[] args) {
         OutputView.printStart();
 
-        Baseball computer = new Computer();
         Judgement judgement = new Judgement();
 
-        playTurn(computer, judgement);
+        do {
+            Baseball computer = new Computer();
+            playTurn(computer, judgement);
+        } while (InputView.doesRetry());
+
+        OutputView.printEnd();
     }
 
     private static void playTurn(Baseball computer, Judgement judgement) {
