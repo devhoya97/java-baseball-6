@@ -2,9 +2,9 @@
 
 - InputView
   사용자가 입력하는 값은 `camp.nextstep.edu.missionutils.Console`의 `readLine()`을 활용한다.
-  - [ ] 서로 다른 3자리의 수를 입력한다.
-    - [ ] `숫자를 입력해주세요 : `를 출력한다.
-    - [ ] [예외처리] 숫자가 아니면 IllegalArgumentException을 발생시킨다.
+  - [x] 서로 다른 3자리의 수를 입력한다.
+    - [x] `숫자를 입력해주세요 : `를 출력한다.
+    - [x] [예외처리] 숫자가 아니면 IllegalArgumentException을 발생시킨다.
   - [ ] 게임이 끝난 경우 재시작여부를 입력한다.
     - [ ] `게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.`를 출력한다.
     - [ ] [예외처리] 입력이 1 또는 2가 아니면 IllegalArgumentException을 발생시킨다.

@@ -4,11 +4,12 @@ import baseball.domain.Baseball;
 import baseball.domain.Computer;
 import baseball.domain.Judgement;
 import baseball.domain.Player;
+import baseball.view.InputView;
 import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        Baseball player = new Player(List.of(1, 2, 3));
+        Baseball player = new Player(InputView.getUserNumbers());
         Baseball computer = new Computer();
 
         Judgement judgement = new Judgement();
