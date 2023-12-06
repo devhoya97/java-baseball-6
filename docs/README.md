@@ -31,7 +31,7 @@ while (computer.size() < 3) {
     - [x] 게임이 재시작되면 숫자를 새로 생성한다.
   - [ ] 플레이어 숫자를 검증한다.
     - [x] [예외처리] 3자리가 아니면 IllegalArgumentException을 발생시킨다.
-    - [ ] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
+    - [x] [예외처리] 숫자가 1~9사이가 아니면 IllegalArgumentException을 발생시킨다.
     - [ ] [예외처리] 숫자가 중복되면 IllegalArgumentException을 발생시킨다.
 - OutputView
   - [ ] 게임 시작 문구를 출력한다.

@@ -1,6 +1,8 @@
 package baseball.domain;
 
 import static baseball.domain.Constants.BASEBALL_NUMBERS_LENGTH;
+import static baseball.domain.Constants.MAX_BASEBALL_NUMBER;
+import static baseball.domain.Constants.MIN_BASEBALL_NUMBER;
 
 import java.util.List;
 
@@ -24,7 +26,11 @@ public class PlayerNumbers implements BaseballNumbers {
     }
 
     private void validateRange(List<Integer> playerNumbers) {
-
+        for (Integer playerNumber : playerNumbers) {
+            if (playerNumber < MIN_BASEBALL_NUMBER || playerNumber > MAX_BASEBALL_NUMBER) {
+                throw new IllegalArgumentException();
+            }
+        }
     }
 
     private void validateDuplication(List<Integer> playerNumbers) {
