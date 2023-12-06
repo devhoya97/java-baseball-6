@@ -31,7 +31,7 @@ public class Judgement {
         return ball;
     }
 
-    public boolean isEnd(Baseball baseballNumbers1, Baseball baseballNumbers2) {
-        return false;
+    public boolean isEnd(List<Integer> playerNumbers, List<Integer> computerNumbers) {
+        return playerNumbers.equals(computerNumbers);
     }
 }

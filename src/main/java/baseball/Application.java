@@ -16,5 +16,6 @@ public class Application {
         System.out.println("computer : " + computer.getNumbers());
         System.out.println("strike : " + judgement.calculateStrike(player.getNumbers(), computer.getNumbers()));
         System.out.println("ball : " + judgement.calculateBall(player.getNumbers(), computer.getNumbers()));
+        System.out.println("isEnd(expected true) : " + judgement.isEnd(player.getNumbers(), player.getNumbers()));
     }
 }
