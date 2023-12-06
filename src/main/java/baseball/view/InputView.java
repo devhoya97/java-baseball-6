@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InputView {
+    private static final int RETRY = 1;
+    private static final int GAME_END = 2;
     public static List<Integer> getUserNumbers() {
         System.out.print("숫자를 입력해주세요 : ");
 
@@ -21,7 +23,18 @@ public class InputView {
 
     public static boolean doesRetry() {
         System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
-        return false;
+
+        String input = Console.readLine();
+        int parsedInput = customParseInt(input);
+
+        if (parsedInput == RETRY) {
+            return true;
+        }
+        if (parsedInput == GAME_END) {
+            return false;
+        }
+
+        throw new IllegalArgumentException();
     }
 
     public static Integer customParseInt(String input) {
