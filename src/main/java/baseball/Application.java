@@ -14,6 +14,7 @@ public class Application {
         Judgement judgement = new Judgement();
         System.out.println("player : " + player.getNumbers());
         System.out.println("computer : " + computer.getNumbers());
-        System.out.println("strike : " + judgement.calculateStrike(player, computer));
+        System.out.println("strike : " + judgement.calculateStrike(player.getNumbers(), computer.getNumbers()));
+        System.out.println("ball : " + judgement.calculateBall(player.getNumbers(), computer.getNumbers()));
     }
 }
